@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-export const Button = ({ label, onClick }:{label:string, onClick: any}) => {
-  return (
-    <button onClick={onClick}>
-      {label}
-    </button>
-  );
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+export const Button = ({ label, onClick }: { label: string; onClick: any }) => {
+  // biome-ignore lint/a11y/useButtonType: <explanation>
+  return <button onClick={onClick}>{label}</button>;
 };
